@@ -372,7 +372,6 @@ class GeneralSettingsController extends Controller
             'price_plan_page_slug' => 'required|string|max:191',
             'blog_page_slug' => 'required|string|max:191',
             'contact_page_slug' => 'required|string|max:191',
-            'career_with_us_page_slug' => 'required|string|max:191',
             'events_page_slug' => 'required|string|max:191',
             'knowledgebase_page_slug' => 'required|string|max:191',
             'quote_page_slug' => 'required|string|max:191',
@@ -381,7 +380,6 @@ class GeneralSettingsController extends Controller
             'feedback_page_slug' => 'required|string|max:191',
             'clients_feedback_page_slug' => 'required|string|max:191',
             'image_gallery_page_slug' => 'required|string|max:191',
-            'donor_page_slug' => 'required|string|max:191',
         ]);
         $slug_list = [
             'video_gallery',
@@ -390,7 +388,7 @@ class GeneralSettingsController extends Controller
             'career_with_us','events','knowledgebase',
             'product','testimonial',
             'feedback','clients_feedback','image_gallery',
-            'donor','appointment','quote',
+            'appointment','quote',
             'courses','support_ticket'
         ];
 
@@ -409,11 +407,9 @@ class GeneralSettingsController extends Controller
                 'faq_page_' . $lang->slug . '_name' => 'nullable|string',
                 'blog_page_' . $lang->slug . '_name' => 'nullable|string',
                 'contact_page_' . $lang->slug . '_name' => 'nullable|string',
-                'career_with_us_page_' . $lang->slug . '_name' => 'nullable|string',
                 'events_page_' . $lang->slug . '_name' => 'nullable|string',
                 'knowledgebase_page_' . $lang->slug . '_name' => 'nullable|string',
                 'product_page_' . $lang->slug . '_name' => 'nullable|string',
-                'donor_page_' . $lang->slug . '_name' => 'nullable|string',
             ]);
             foreach ($slug_list as $field) {
                 $meta_tags =  $field.'_page_' . $lang->slug . '_meta_tags';

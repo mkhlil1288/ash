@@ -19,7 +19,7 @@ class Blog extends Model implements Feedable
         return $this->belongsTo('App\Admin','user_id');
     }
 
-    public function toFeedItem()
+    public function toFeedItem(): FeedItem
     {
         return FeedItem::create([
             'id' => $this->id,
@@ -27,7 +27,7 @@ class Blog extends Model implements Feedable
             'summary' => $this->excerpt,
             'updated' => $this->updated_at,
             'link' => route('frontend.blog.single',$this->slug),
-            'author' => $this->author,
+            'authorName' => $this->author,
         ]);
     }
 

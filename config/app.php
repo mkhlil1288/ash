@@ -165,7 +165,6 @@ return [
         /*
          * Package Service Providers...
          */
-        KingFlamez\Rave\RaveServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
         SimpleSoftwareIO\QrCode\QrCodeServiceProvider::class,
@@ -237,7 +236,6 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
-        'Rave' => KingFlamez\Rave\Facades\Rave::class,
         'QrCode' => SimpleSoftwareIO\QrCode\Facades\QrCode::class,
         "Purifier" =>  Mews\Purifier\Facades\Purifier::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class

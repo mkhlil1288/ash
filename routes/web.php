@@ -67,12 +67,8 @@ Route::group(['middleware' => ['setlang:frontend', 'globalVariable', 'maintains_
         Route::get($course_page_slug.'-cancel/{id}', 'CourseController@payment_cancel')->name('frontend.course.payment.cancel');
         //courses payment ipn
         Route::get($course_page_slug.'-paypal-ipn', 'CourseEnrollController@paypal_ipn')->name('frontend.course.paypal.ipn');
-        Route::post('/courses-paytm-ipn', 'CourseEnrollController@paytm_ipn')->name('frontend.course.paytm.ipn');
         Route::post($course_page_slug.'-stripe', 'CourseEnrollController@stripe_ipn')->name('frontend.course.stripe.ipn');
         Route::get($course_page_slug.'-stripe/pay', 'CourseEnrollController@stripe_success')->name('frontend.course.stripe.success');
-        Route::post($course_page_slug.'-razorpay', 'CourseEnrollController@razorpay_ipn')->name('frontend.course.razorpay.ipn');
-        Route::post($course_page_slug.'-paystack/pay', 'CourseEnrollController@paystack_pay')->name('frontend.course.paystack.pay');
-        Route::get($course_page_slug.'-mollie/webhook', 'CourseEnrollController@mollie_webhook')->name('frontend.course.mollie.webhook');
     });
 
 });
@@ -97,11 +93,7 @@ Route::group(['middleware' => ['setlang:frontend', 'globalVariable', 'maintains_
     Route::get($appointment_page_slug.'-paypal-ipn', 'Frontend\AppointmentBookingController@paypal_ipn')->name('frontend.appointment.paypal.ipn');
     Route::post($appointment_page_slug.'-stripe', 'Frontend\AppointmentBookingController@stripe_ipn')->name('frontend.appointment.stripe.ipn');
     Route::get($appointment_page_slug.'-stripe/pay', 'Frontend\AppointmentBookingController@stripe_success')->name('frontend.appointment.stripe.success');
-    Route::post($appointment_page_slug.'-razorpay', 'Frontend\AppointmentBookingController@razorpay_ipn')->name('frontend.appointment.razorpay.ipn');
-    Route::post($appointment_page_slug.'-paystack/pay', 'Frontend\AppointmentBookingController@paystack_pay')->name('frontend.appointment.paystack.pay');
-    Route::get($appointment_page_slug.'-mollie/webhook', 'Frontend\AppointmentBookingController@mollie_webhook')->name('frontend.appointment.mollie.webhook');
 
-    Route::post('/appointment-paytm-ipn', 'Frontend\AppointmentBookingController@paytm_ipn')->name('frontend.appointment.paytm.ipn');
 
 });
 
@@ -149,12 +141,8 @@ Route::group(['middleware' => ['setlang:frontend', 'globalVariable', 'maintains_
 
     //product payment ipn
     Route::get('/product-paypal-ipn', 'ProductOrderController@paypal_ipn')->name('frontend.product.paypal.ipn');
-    Route::post('/product-paytm-ipn', 'ProductOrderController@paytm_ipn')->name('frontend.product.paytm.ipn');
     Route::post('/product-stripe','ProductOrderController@stripe_charge')->name('frontend.product.stripe.ipn');
     Route::get('/product-stripe/pay','ProductOrderController@stripe_ipn')->name('frontend.product.stripe.success');
-    Route::post('/product-razorpay', 'ProductOrderController@razorpay_ipn')->name('frontend.product.razorpay.ipn');
-    Route::post('/product-paystack/pay', 'ProductOrderController@paystack_pay')->name('frontend.product.paystack.pay');
-    Route::get('/product-mollie/webhook', 'ProductOrderController@mollie_webhook')->name('frontend.product.mollie.webhook');
 
 });
 
@@ -174,11 +162,8 @@ Route::group(['middleware' => ['setlang:frontend', 'globalVariable', 'maintains_
 
     //event payment ipn
     Route::get('/event-paypal-ipn', 'EventPaymentLogsController@paypal_ipn')->name('frontend.event.paypal.ipn');
-    Route::post('/event-paytm-ipn', 'EventPaymentLogsController@paytm_ipn')->name('frontend.event.paytm.ipn');
     Route::post('/event-stripe','EventPaymentLogsController@stripe_charge')->name('frontend.event.stripe.charge');
     Route::get('/event-stripe/pay','EventPaymentLogsController@stripe_ipn')->name('frontend.event.stripe.ipn');
-    Route::post('/event-razorpay', 'EventPaymentLogsController@razorpay_ipn')->name('frontend.event.razorpay.ipn');
-    Route::get('/event-mollie/webhook', 'EventPaymentLogsController@mollie_webhook')->name('frontend.event.mollie.webhook');
 
     //event booking
     Route::get('/booking-confirm/{id}', 'FrontendController@booking_confirm')->name('frontend.event.booking.confirm');
@@ -212,13 +197,8 @@ Route::group(['middleware' => ['setlang:frontend', 'globalVariable', 'maintains_
       PAYMENT IPN  ROUTES
     ---------------------------------*/
     Route::get('/paypal-ipn', 'PaymentLogController@paypal_ipn')->name('frontend.paypal.ipn');
-    Route::post('/paytm-ipn', 'PaymentLogController@paytm_ipn')->name('frontend.paytm.ipn');
     Route::post('/stripe','PaymentLogController@stripe_charge')->name('frontend.stripe.charge');
     Route::get('/stripe/pay','PaymentLogController@stripe_ipn')->name('frontend.stripe.ipn');
-    Route::post('/razorpay', 'PaymentLogController@razorpay_ipn')->name('frontend.razorpay.ipn');
-    Route::post('/paystack/pay', 'PaymentLogController@paystack_pay')->name('frontend.paystack.pay');
-    Route::get('/paystack/callback', 'PaymentLogController@paystack_callback')->name('frontend.paystack.callback');
-    Route::get('/mollie/callback', 'PaymentLogController@mollie_webhook')->name('frontend.mollie.webhook');
 
 
     /*---------------------------------
@@ -243,7 +223,6 @@ Route::group(['middleware' => ['setlang:frontend', 'globalVariable', 'maintains_
     $clients_feedback_page_slug = get_static_option('clients_feedback_page_slug') ?? 'clients-feedback';
     $image_gallery_page_slug = get_static_option('image_gallery_page_slug') ?? 'image-gallery';
     $video_gallery_page_slug = get_static_option('video_gallery_page_slug') ?? 'video-gallery';
-    $donor_page_slug = get_static_option('donor_page_slug') ?? 'donor-list';
 
     /*--------------------------------------
         FRONTEND: SERVICES ROUTES
@@ -2101,11 +2080,6 @@ Route::prefix('admin-home')->middleware(['setlang:backend'])->group(function () 
         Route::get('/popup-settings', 'GeneralSettingsController@popup_settings')->name('admin.general.popup.settings');
         Route::post('/popup-settings', 'GeneralSettingsController@update_popup_settings');
 
-        /*----------------------------------------------------
-            LICENSE SETTINGS
-        ----------------------------------------------------*/
-        Route::get('/license-setting', 'GeneralSettingsController@license_settings')->name('admin.general.license.settings');
-        Route::post('/license-setting', 'GeneralSettingsController@update_license_settings');
 
         /*----------------------------------------------------
           RSS SETTINGS

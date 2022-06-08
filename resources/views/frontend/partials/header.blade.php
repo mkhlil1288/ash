@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="{{asset('assets/frontend/css/toastr.css')}}">
     <link href="{{asset('assets/frontend/css/jquery.mb.YTPlayer.min.css')}}" media="all" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
+    <link rel="alternate" type="application/atom+xml" title="News" href="{{get_static_option('site_rss_feed_url', '/feeds')}}">
     @if(file_exists('assets/frontend/css/home-'.$home_page_variant.'.css') && empty(get_static_option('home_page_page_builder_status')))
         <link rel="stylesheet" href="{{asset('assets/frontend/css/home-'.$home_page_variant.'.css')}}">
     @endif

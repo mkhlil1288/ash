@@ -21,7 +21,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Str;
-use KingFlamez\Rave\Facades\Rave;
 use phpDocumentor\Reflection\Types\Self_;
 use Razorpay\Api\Api;
 use Stripe\Charge;

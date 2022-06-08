@@ -32,11 +32,6 @@
                                     <a class="nav-link @if(request()->routeIs('user.home.event.booking')) active @endif" href="{{route('user.home.event.booking')}}">{{get_static_option('events_page_'.$user_select_lang_slug.'_name')}} {{__('Booking')}}</a>
                                 </li>
                             @endif
-                            @if(!empty(get_static_option('donations_module_status')))
-                                <li class="nav-item">
-                                    <a class="nav-link @if(request()->routeIs('user.home.donations')) active @endif" href="{{route('user.home.donations')}}" >{{__('All ')}} {{get_static_option('donation_page_'.$user_select_lang_slug.'_name')}}</a>
-                                </li>
-                            @endif
                             @if(!empty(get_static_option('appointment_module_status')))
                                 <li class="nav-item">
                                     <a class="nav-link @if(request()->routeIs('user.home.appointment.booking')) active @endif" href="{{route('user.home.appointment.booking')}}" >{{__('Booked')}} {{get_static_option('appointment_page_'.$user_select_lang_slug.'_name')}}</a>

@@ -18,13 +18,6 @@
                             @php $default_lang = get_default_language();
                             @endphp
                             <div class="form-group">
-                                <label for="job_module_status"><strong>{{get_static_option('career_with_us_page_'.$default_lang.'_name')}} {{__('Module Enable/Disable')}}</strong></label>
-                                <label class="switch">
-                                    <input type="checkbox" name="job_module_status"  @if(!empty(get_static_option('job_module_status'))) checked @endif >
-                                    <span class="slider onff"></span>
-                                </label>
-                            </div>
-                            <div class="form-group">
                                 <label for="events_module_status"><strong>{{get_static_option('events_page_'.$default_lang.'_name')}} {{__('Module Enable/Disable')}}</strong></label>
                                 <label class="switch">
                                     <input type="checkbox" name="events_module_status"  @if(!empty(get_static_option('events_module_status'))) checked @endif >
@@ -35,13 +28,6 @@
                                 <label for="product_module_status"><strong>{{get_static_option('product_page_'.$default_lang.'_name')}} {{__('Module Enable/Disable')}}</strong></label>
                                 <label class="switch">
                                     <input type="checkbox" name="product_module_status"  @if(!empty(get_static_option('product_module_status'))) checked @endif >
-                                    <span class="slider onff"></span>
-                                </label>
-                            </div>
-                            <div class="form-group">
-                                <label for="donations_module_status"><strong>{{get_static_option('donation_page_'.$default_lang.'_name')}} {{__('Module Enable/Disable')}}</strong></label>
-                                <label class="switch">
-                                    <input type="checkbox" name="donations_module_status"  @if(!empty(get_static_option('donations_module_status'))) checked @endif>
                                     <span class="slider onff"></span>
                                 </label>
                             </div>

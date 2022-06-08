@@ -32,17 +32,6 @@
                 </div>
             </div>
         @endif
-        @if(get_static_option('donations_module_status'))
-            <div class="col-lg-6">
-                <div class="user-dashboard-card style-01">
-                    <div class="icon"><i class="fas fa-donate"></i></div>
-                    <div class="content">
-                        <h4 class="title">{{__('Total')}} {{get_static_option('donation_page_'.$user_select_lang_slug.'_name')}}</h4>
-                        <span class="number">{{$donation}}</span>
-                    </div>
-                </div>
-            </div>
-        @endif
         @if(get_static_option('appointment_module_status'))
             <div class="col-lg-6">
                 <div class="user-dashboard-card">
