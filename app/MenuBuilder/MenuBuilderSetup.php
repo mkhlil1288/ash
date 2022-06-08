@@ -35,7 +35,6 @@ class MenuBuilderSetup extends MenuBuilderBase
             'feedback',
             'clients_feedback',
             'image_gallery',
-            'donor',
             'appointment',
             'quote',
             'courses',

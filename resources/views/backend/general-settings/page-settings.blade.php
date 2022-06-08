@@ -21,7 +21,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     @php
-                                        $pages_list = ['video_gallery','about','service','work','team','faq','price_plan','blog','contact','career_with_us','events','knowledgebase','donation','product','testimonial','feedback','clients_feedback','image_gallery','donor','appointment','quote','courses','support_ticket'];
+                                        $pages_list = ['video_gallery','about','service','work','team','faq','price_plan','blog','contact','events','knowledgebase','product','testimonial','feedback','clients_feedback','image_gallery','appointment','quote','courses','support_ticket'];
                                     @endphp
                                     @foreach($pages_list as $page)
                                         <div class="from-group">

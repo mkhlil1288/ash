@@ -1459,7 +1459,7 @@ function get_amount_in_inr($amount, $currency)
         'TRY' => '₺', 'TTD' => 'TT$', 'TWD' => 'NT$', 'UAH' => '₴', 'UYU' => '$U', 'UZS' => 'so\'m', 'VND' => '₫', 'VUV' => 'VT', 'WST' => 'WS$', 'XCD' => '$', 'XPF' => '₣', 'YER' => '﷼', 'ZAR' => 'R'
     ];
     foreach ($all_currency as $cur => $symbol) {
-        if ($cur == 'INR') {
+        if ($cur == 'EUR') {
             continue;
         }
         if ($cur == $currency) {

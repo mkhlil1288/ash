@@ -100,7 +100,7 @@ abstract class PaymentGatewayBase
      * it will not work if admin did not give currency conversation rate
      * */
     protected static function get_amount_in_inr($amount){
-        if (self::global_currency() === 'INR'){
+        if (self::global_currency() === 'EUR'){
             return $amount;
         }
         $payable_amount = self::make_amount_in_inr($amount, self::global_currency());
@@ -120,7 +120,7 @@ abstract class PaymentGatewayBase
         $output = 0;
         $all_currency = GlobalCurrency::script_currency_list();
         foreach ($all_currency as $cur => $symbol) {
-            if ($cur === 'INR') {
+            if ($cur === 'EUR') {
                 continue;
             }
             if ($cur == $currency) {

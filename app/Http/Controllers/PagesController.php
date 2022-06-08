@@ -37,7 +37,7 @@ class PagesController extends Controller
            'lang' => 'required|string',
         ]);
 
-        $pre_made_pages_slug = ['video_gallery','about','service','work','team','faq','price_plan','blog','contact','career_with_us','events','knowledgebase','product','testimonial','feedback','clients_feedback','image_gallery','donor','appointment','quote','courses','support_ticket'];
+        $pre_made_pages_slug = ['video_gallery','about','service','work','team','faq','price_plan','blog','contact','career_with_us','events','knowledgebase','product','testimonial','feedback','clients_feedback','image_gallery','appointment','quote','courses','support_ticket'];
         $matched_pre_made_page_slug = false;
         $user_given_slug = $request->slug;
         foreach($pre_made_pages_slug as $page_slug){

@@ -70,13 +70,13 @@
                                         </div>
                                     @endif
 
-                                    @if($global_currency != 'INR' && !empty(get_static_option('paytm_gateway') || !empty(get_static_option('razorpay_gateway'))))
+                                    @if($global_currency != 'EUR' && !empty(get_static_option('paytm_gateway') || !empty(get_static_option('razorpay_gateway'))))
                                         <div class="form-group">
-                                            <label for="site_{{strtolower($global_currency)}}_to_inr_exchange_rate">{{__($global_currency.' to INR Exchange Rate')}}</label>
+                                            <label for="site_{{strtolower($global_currency)}}_to_inr_exchange_rate">{{__($global_currency.' to EUR Exchange Rate')}}</label>
                                             <input type="text" class="form-control"
                                                    name="site_{{strtolower($global_currency)}}_to_inr_exchange_rate"
                                                    value="{{get_static_option('site_'.$global_currency.'_to_inr_exchange_rate')}}">
-                                            <span class="info-text">{{__('enter '.$global_currency.' to INR exchange rate. eg: 1'.$global_currency.' = ? INR')}}</span>
+                                            <span class="info-text">{{__('enter '.$global_currency.' to EUR exchange rate. eg: 1'.$global_currency.' = ? EUR')}}</span>
                                         </div>
                                     @endif
 

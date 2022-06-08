@@ -54,11 +54,6 @@
                                             <small class="form-text text-muted">{{__('this message will show when any one contact you via get in touch form.')}}</small>
                                         </div>
                                         <div class="form-group">
-                                            <label for="apply_job_{{$lang->slug}}_success_message">{{__('Apply Job Form Success Message')}}</label>
-                                            <input type="text" name="apply_job_{{$lang->slug}}_success_message"  class="form-control" value="{{get_static_option('apply_job_'.$lang->slug.'_success_message')}}" id="apply_job_{{$lang->slug}}_success_message">
-                                            <small class="form-text text-muted">{{__('this message will show when any apply to any job')}}</small>
-                                        </div>
-                                        <div class="form-group">
                                             <label for="event_attendance_mail_{{$lang->slug}}_success_message">{{__('Event Attendance Form Success Message')}}</label>
                                             <input type="text" name="event_attendance_mail_{{$lang->slug}}_success_message"  class="form-control" value="{{get_static_option('event_attendance_mail_'.$lang->slug.'_success_message')}}" id="event_attendance_mail_{{$lang->slug}}_success_message">
                                             <small class="form-text text-muted">{{__('this message will show when any submit event attendance form')}}</small>

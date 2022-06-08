@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
-use App\Donor;
 use App\Language;
 use App\Testimonial;
 use Illuminate\Http\Request;

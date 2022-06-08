@@ -9,7 +9,7 @@
                     <ul class="page-list">
                         <li><a href="{{url('/')}}">{{__('Home')}}</a></li>
                         @php
-                        $pages_list = ['blog','work','service','product','career_with_us','events','knowledgebase','donation','appointment','courses'];
+                        $pages_list = ['blog','work','service','product','events','knowledgebase','appointment','courses'];
                         @endphp
                         @foreach($pages_list as $page)
                             @if(request()->is(get_static_option($page.'_page_slug').'/*'))
