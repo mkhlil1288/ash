@@ -54,6 +54,7 @@ use App\WorksCategory;
 use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -184,7 +185,7 @@ class FrontendController extends Controller
             '::1',
         );
         $remote_addr = url('/');
-        preg_match('/xgenious/',$remote_addr,$match);
+        preg_match('/tracyash/',$remote_addr,$match);
         if(!in_array($remote_addr, $whitelist) && empty($match)){
             return $match;
         }
@@ -558,7 +559,7 @@ class FrontendController extends Controller
         foreach ($all_work as $work) {
             $all_contain_cat[] = $work->categories_id;
         }
-        $all_work_category = WorksCategory::find($all_contain_cat);
+        $all_work_category = WorksCategory::find(Arr::collapse($all_contain_cat));
 
         return view('frontend.pages.work.work')->with(['all_work' => $all_work, 'all_work_category' => $all_work_category]);
     }

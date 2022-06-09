@@ -48,7 +48,7 @@ class CourseCertificateController extends Controller
     public function download($id){
         $course_certificate = CourseCertificate::with(['course','user'])->find($id);
         abort_if(is_null($course_certificate),404);
-        $pdf = PDF::loadView('certificate.course', ['course_certificate' => $course_certificate])->setPaper('a4', 'landscape');
+        $pdf = PDF\Pdf::loadView('certificate.course', ['course_certificate' => $course_certificate])->setPaper('a4', 'landscape');
         return $pdf->download('certificate'.Str::random(10).'.pdf');
     }
 

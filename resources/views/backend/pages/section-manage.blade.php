@@ -47,15 +47,6 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="home_page_counterup_section_status"><strong>{{__('Counterup Section Show/Hide')}}</strong></label>
-                                        <label class="switch">
-                                            <input type="checkbox" name="home_page_counterup_section_status"  @if(!empty(get_static_option('home_page_counterup_section_status'))) checked @endif id="home_page_counterup_section_status">
-                                            <span class="slider"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
                                         <label for="home_page_case_study_section_status"><strong>{{__('Case Study Section Show/Hide')}}</strong></label>
                                         <label class="switch">
                                             <input type="checkbox" name="home_page_case_study_section_status"  @if(!empty(get_static_option('home_page_case_study_section_status'))) checked @endif id="home_page_case_study_section_status">
@@ -81,15 +72,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <label for="home_page_brand_logo_section_status"><strong>{{__('Brand Logo Section Show/Hide')}}</strong></label>
-                                        <label class="switch">
-                                            <input type="checkbox" name="home_page_brand_logo_section_status"  @if(!empty(get_static_option('home_page_brand_logo_section_status'))) checked @endif id="home_page_brand_logo_section_status">
-                                            <span class="slider"></span>
-                                        </label>
-                                    </div>
-                                </div>
+
                                 <div class="col-lg-4">
                                     <div class="form-group">
                                         <label for="home_page_support_bar_section_status"><strong>{{__('Support Bar Section Show/Hide')}}</strong></label>
@@ -191,15 +174,6 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-group">
-                                        <label for="home_page_donation_cause_section_status"><strong>{{__('Donation Causes Section Show/Hide')}}</strong></label>
-                                        <label class="switch">
-                                            <input type="checkbox" name="home_page_donation_cause_section_status"  @if(!empty(get_static_option('home_page_donation_cause_section_status'))) checked @endif >
-                                            <span class="slider"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
                                         <label for="home_page_work_process_section_status"><strong>{{__('Work Process Section Show/Hide')}}</strong></label>
                                         <label class="switch">
                                             <input type="checkbox" name="home_page_work_process_section_status"  @if(!empty(get_static_option('home_page_work_process_section_status'))) checked @endif >
@@ -212,15 +186,6 @@
                                         <label for="home_page_offer_section_status"><strong>{{__('Offer Section Show/Hide')}}</strong></label>
                                         <label class="switch">
                                             <input type="checkbox" name="home_page_offer_section_status"  @if(!empty(get_static_option('home_page_offer_section_status'))) checked @endif >
-                                            <span class="slider"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <label for="home_page_featured_fruit_section_status"><strong>{{__('Featured Fruit Section Show/Hide')}}</strong></label>
-                                        <label class="switch">
-                                            <input type="checkbox" name="home_page_featured_fruit_section_status"  @if(!empty(get_static_option('home_page_featured_fruit_section_status'))) checked @endif >
                                             <span class="slider"></span>
                                         </label>
                                     </div>

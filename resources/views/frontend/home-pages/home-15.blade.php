@@ -378,37 +378,6 @@
 </div>
 @endif
 
-@if(!empty(filter_static_option_value('home_page_brand_logo_section_status',$static_field_data)))
-    <div class="client-section padding-bottom-70 padding-top-60">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="client-area">
-                        <div class="client-active-area global-carousel-init"
-                             data-loop="true"
-                             data-desktopitem="5"
-                             data-mobileitem="1"
-                             data-tabletitem="2"
-                             data-autoplay="true"
-                             data-margin="80"
-                        >
-                            @foreach($all_brand_logo as $data)
-                                <div class="single-brand">
-                                    <div class="img-wrapper">
-                                        @if(!empty($data->url) )<a rel="canonical" href="{{$data->url}}">@endif
-                                            {!! render_image_markup_by_attachment_id($data->image) !!}
-                                            @if(!empty($data->url) )  </a>@endif
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-@endif
-
 @section('style')
     <link rel="stylesheet" href="{{asset('assets/frontend/css/toastr.css')}}">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">

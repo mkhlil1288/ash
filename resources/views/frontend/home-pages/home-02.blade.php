@@ -234,45 +234,6 @@
     </section>
 @endif
 
-@if(!empty(filter_static_option_value('home_page_brand_logo_section_status',$static_field_data)))
-<div class="client-section padding-bottom-70 padding-top-85">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title desktop-center padding-bottom-25">
-                    <h3>
-                        {{filter_static_option_value('home_page_01_'.$user_select_lang_slug.'_brand_logo_area_title',$static_field_data)}}
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="client-area">
-                    <div class="client-active-area global-carousel-init"
-                         data-loop="true"
-                         data-desktopitem="5"
-                         data-mobileitem="1"
-                         data-tabletitem="2"
-                         data-autoplay="true"
-                         data-margin="80"
-                    >
-                        @foreach($all_brand_logo as $data)
-                            <div class="single-brand">
-                                <div class="img-wrapper">
-                                    @if(!empty($data->url) )<a rel="canonical" href="{{$data->url}}">@endif
-                                        {!! render_image_markup_by_attachment_id($data->image) !!}
-                                        @if(!empty($data->url) )  </a>@endif
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endif
 @if(!empty(filter_static_option_value('home_page_price_plan_section_status',$static_field_data)))
     <section class="pricing-plan-area bg-liteblue price-inner padding-bottom-120 margin-top-50 padding-top-110">
         <div class="container">

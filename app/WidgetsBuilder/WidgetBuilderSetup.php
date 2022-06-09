@@ -47,7 +47,6 @@ class WidgetBuilderSetup
             'blog',
             'service',
             'case_study',
-            'career',
             'event',
             'knowledgebase',
         ];

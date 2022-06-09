@@ -45,82 +45,12 @@
                                 <input type="text" name="portfolio_home_color" style="background-color: {{get_static_option('portfolio_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('portfolio_home_color')}}" >
                             </div>
                             <div class="form-group">
-                                <label for="logistics_home_color">{{__('Logistics Home Color')}}</label>
-                                <input type="text" name="logistics_home_color" style="background-color: {{get_static_option('logistics_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('logistics_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="industry_home_color">{{__('Industry Home Color')}}</label>
-                                <input type="text" name="industry_home_color" style="background-color: {{get_static_option('industry_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('industry_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="construction_home_color">{{__('Construction Home Color')}}</label>
-                                <input type="text" name="construction_home_color" style="background-color: {{get_static_option('construction_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('construction_home_color')}}" >
-                            </div>
-
-                            <div class="form-group">
-                                <label for="lawyer_home_color">{{__('Lawyer Home Color')}}</label>
-                                <input type="text" name="lawyer_home_color" style="background-color: {{get_static_option('lawyer_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('lawyer_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="political_home_color">{{__('Political Home Color')}}</label>
-                                <input type="text" name="political_home_color" style="background-color: {{get_static_option('political_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('political_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="medical_home_color">{{__('Medical Home Color One')}}</label>
-                                <input type="text" name="medical_home_color" style="background-color: {{get_static_option('medical_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('medical_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="medical_home_color_two">{{__('Medical Home Color Two')}}</label>
-                                <input type="text" name="medical_home_color_two" style="background-color: {{get_static_option('medical_home_color_two')}};color: #fff;" class="form-control" value="{{get_static_option('medical_home_color_two')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="fruits_home_color">{{__('Fruits Home Color')}}</label>
-                                <input type="text" name="fruits_home_color" style="background-color: {{get_static_option('fruits_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('fruits_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="fruits_home_heading_color">{{__('Fruits Home Heading Color')}}</label>
-                                <input type="text" name="fruits_home_heading_color" style="background-color: {{get_static_option('fruits_home_heading_color')}};color: #fff;" class="form-control" value="{{get_static_option('fruits_home_heading_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="portfolio_home_dark_color">{{__('Portfolio Home Dark One Color')}}</label>
-                                <input type="text" name="portfolio_home_dark_color" style="background-color: {{get_static_option('portfolio_home_dark_color')}};color: #fff;" class="form-control" value="{{get_static_option('portfolio_home_dark_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="portfolio_home_dark_two_color">{{__('Portfolio Home Dark Two Color')}}</label>
-                                <input type="text" name="portfolio_home_dark_two_color" style="background-color: {{get_static_option('portfolio_home_dark_two_color')}};color: #fff;" class="form-control" value="{{get_static_option('portfolio_home_dark_two_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="charity_home_color">{{__('Charity Home Color')}}</label>
-                                <input type="text" name="charity_home_color" style="background-color: {{get_static_option('charity_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('charity_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="dagency_home_color">{{__('Design Agency Home Color')}}</label>
-                                <input type="text" name="dagency_home_color" style="background-color: {{get_static_option('dagency_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('dagency_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="cleaning_home_color">{{__('Cleaning Home Color')}}</label>
-                                <input type="text" name="cleaning_home_color" style="background-color: {{get_static_option('cleaning_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('cleaning_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="cleaning_home_two_color">{{__('Cleaning Home Two Color')}}</label>
-                                <input type="text" name="cleaning_home_two_color" style="background-color: {{get_static_option('cleaning_home_two_color')}};color: #fff;" class="form-control" value="{{get_static_option('cleaning_home_two_color')}}" >
-                            </div>
-                            <div class="form-group">
                                 <label for="course_home_color">{{__('Course Home Color')}}</label>
                                 <input type="text" name="course_home_color" style="background-color: {{get_static_option('course_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('course_home_color')}}" >
                             </div>
-
                             <div class="form-group">
                                 <label for="course_home_two_color">{{__('Course Home Two Color')}}</label>
                                 <input type="text" name="course_home_two_color" style="background-color: {{get_static_option('course_home_two_color')}};color: #fff;" class="form-control" value="{{get_static_option('course_home_two_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="grocery_home_color">{{__('Grocery Home Color')}}</label>
-                                <input type="text" name="grocery_home_color" style="background-color: {{get_static_option('grocery_home_color')}};color: #fff;" class="form-control" value="{{get_static_option('grocery_home_color')}}" >
-                            </div>
-                            <div class="form-group">
-                                <label for="grocery_home_two_color">{{__('Grocery Home Two Color')}}</label>
-                                <input type="text" name="grocery_home_two_color" style="background-color: {{get_static_option('grocery_home_two_color')}};color: #fff;" class="form-control" value="{{get_static_option('grocery_home_two_color')}}" >
                             </div>
 
                             <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">{{__('Update Changes')}}</button>

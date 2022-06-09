@@ -75,7 +75,6 @@ class AdminDashboardController extends Controller
         $package_recent_order = Order::orderBy('id','desc')->take(5)->get();
         $event_attendance_recent_order = EventAttendance::orderBy('id','desc')->take(5)->get();
 
-        $this->update_script_info();
 
         return view('backend.admin-home')->with([
             'blog_count' => $all_blogs,
@@ -97,12 +96,6 @@ class AdminDashboardController extends Controller
         ]);
     }
 
-    private function update_script_info(){
-        update_static_option('site_install_path',url('/'));
-        update_static_option('site_admin_path',route('admin.home'));
-        update_static_option('site_frontend_path',route('homepage'));
-        update_static_option('site_script_unique_key',getenv('XGENIOUS_API_KEY'));
-    }
 
     public function admin_settings()
     {

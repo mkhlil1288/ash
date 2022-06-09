@@ -178,7 +178,7 @@ class HeaderAreaStyleEleven extends PageBuilderBase
         </div>
     </div>
     <div class="bottom-image-shape">
-        <img src="https://xgenious.com/laravel/nexelit/assets/frontend/img/shape/charity-header-bottom-shape.svg"
+        <img src="#"
              alt="header bottom image shape">
     </div>
 </div>

@@ -1,7 +1,7 @@
 <?php
 namespace App\Helpers;
 /**
- * this class will contain all helper method for nexelit
+ * this class will contain all helper method for
  * @since 2.0.4
  * */
     class NexelitHelpers{

@@ -141,18 +141,6 @@
                                         </td>
                                     </tr>
 
-                                    <tr>
-                                        <td>{{__('Job Application Mail To Admin')}}</td>
-                                        <td>
-                                            <x-edit-icon :url="route('admin.email.template.job.application.admin')"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>{{__('Job Application Mail To User')}}</td>
-                                        <td>
-                                            <x-edit-icon :url="route('admin.email.template.job.application.user')"/>
-                                        </td>
-                                    </tr>
 
                                     <tr>
                                         <td>{{__('Event Booking Mail To Admin')}}</td>
@@ -210,30 +198,6 @@
                                         </td>
                                     </tr>
 
-                                    <tr>
-                                        <td>{{__('Donation Mail To Admin')}}</td>
-                                        <td>
-                                            <x-edit-icon :url="route('admin.email.template.donation.mail.admin')"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>{{__('Donation Mail To User')}}</td>
-                                        <td>
-                                            <x-edit-icon :url="route('admin.email.template.donation.mail.user')"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>{{__('Donation Payment Accept Mail')}}</td>
-                                        <td>
-                                            <x-edit-icon :url="route('admin.email.template.donation.mail.payment.accept')"/>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>{{__('Donation Reminder Mail')}}</td>
-                                        <td>
-                                            <x-edit-icon :url="route('admin.email.template.donation.mail.reminder.mail')"/>
-                                        </td>
-                                    </tr>
 
 
                                 </tbody>

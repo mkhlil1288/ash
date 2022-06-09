@@ -49,27 +49,27 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-05.jpg')}}" data-home_id="05" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-06.jpg')}}" data-home_id="06" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                               <div class="col-lg-3 col-md-6">
-                                   <div class="img-select">
-                                       <div class="img-wrap">
-                                           <img src="{{asset('assets/frontend/home-variant/home-07.jpg')}}" data-home_id="07" alt="">
-                                       </div>
-                                   </div>
-                               </div>
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-05.jpg')}}" data-home_id="05" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-06.jpg')}}" data-home_id="06" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                               <div class="col-lg-3 col-md-6">--}}
+{{--                                   <div class="img-select">--}}
+{{--                                       <div class="img-wrap">--}}
+{{--                                           <img src="{{asset('assets/frontend/home-variant/home-07.jpg')}}" data-home_id="07" alt="">--}}
+{{--                                       </div>--}}
+{{--                                   </div>--}}
+{{--                               </div>--}}
                                <div class="col-lg-3 col-md-6">
                                    <div class="img-select">
                                        <div class="img-wrap">
@@ -77,48 +77,48 @@
                                        </div>
                                    </div>
                                </div>
-                               <div class="col-lg-3 col-md-6">
-                                   <div class="img-select">
-                                       <div class="img-wrap">
-                                           <img src="{{asset('assets/frontend/home-variant/home-09.jpg')}}" data-home_id="09" alt="">
-                                        </div>
-                                   </div>
-                               </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-12.png')}}" data-home_id="12" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-13.png')}}" data-home_id="13" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-14.png')}}" data-home_id="14" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-15.png')}}" data-home_id="15" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-16.png')}}" data-home_id="16" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+{{--                               <div class="col-lg-3 col-md-6">--}}
+{{--                                   <div class="img-select">--}}
+{{--                                       <div class="img-wrap">--}}
+{{--                                           <img src="{{asset('assets/frontend/home-variant/home-09.jpg')}}" data-home_id="09" alt="">--}}
+{{--                                        </div>--}}
+{{--                                   </div>--}}
+{{--                               </div>--}}
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-12.png')}}" data-home_id="12" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-13.png')}}" data-home_id="13" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-14.png')}}" data-home_id="14" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-15.png')}}" data-home_id="15" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-16.png')}}" data-home_id="16" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                                 <div class="col-lg-3 col-md-6">
                                     <div class="img-select">
                                         <div class="img-wrap">
@@ -126,13 +126,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6">
-                                    <div class="img-select">
-                                        <div class="img-wrap">
-                                            <img src="{{asset('assets/frontend/home-variant/home-18.png')}}" data-home_id="18" alt="">
-                                        </div>
-                                    </div>
-                                </div>
+{{--                                <div class="col-lg-3 col-md-6">--}}
+{{--                                    <div class="img-select">--}}
+{{--                                        <div class="img-wrap">--}}
+{{--                                            <img src="{{asset('assets/frontend/home-variant/home-18.png')}}" data-home_id="18" alt="">--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                             <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">{{__('Update Home Variant')}}</button>
                         </form>

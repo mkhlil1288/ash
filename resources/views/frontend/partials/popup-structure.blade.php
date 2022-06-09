@@ -4,9 +4,6 @@
 
         $popup_details = \App\PopupBuilder::find($popup_id);
         $website_url = url('/');
-        if (preg_match('/(xgenious)/',$website_url)){
-            $popup_details = \App\PopupBuilder::where('lang',$user_select_lang_slug)->inRandomOrder()->first();
-        }
         if(!empty($popup_details)){
             $popup_class = '';
             if ($popup_details->type == 'notice'){

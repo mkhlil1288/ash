@@ -6,6 +6,7 @@ use App\Facades\Cart;
 use App\Helpers\CartHelper;
 use App\Helpers\EmailTemplateHelper;
 use Illuminate\Http\Response;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
@@ -34,6 +35,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Paginator::useBootstrap();
+
         Schema::defaultStringLength(191);
         $home_page_variant = get_static_option('home_page_variant');
         view()->share(compact('home_page_variant'));
