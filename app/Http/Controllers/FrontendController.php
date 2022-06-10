@@ -118,39 +118,39 @@ class FrontendController extends Controller
             'all_contact_info' => $all_contact_info,
         ];
 
-        if (in_array($home_page_variant,['10','12','16']) ){
-            //appointment module for home page 10,12,16
-            $appointment_query = Appointment::query();
-            $appointment_query->with('lang_front');
-            $feature_product_list = get_static_option('home_page_' . get_static_option('home_page_variant') . '_appointment_section_category') ?? '';
-            $feature_product_list = unserialize($feature_product_list, ['class' => false]);
-            if (is_array($feature_product_list) && count($feature_product_list) > 0) {
-                $appointment_query->whereIn('categories_id', $feature_product_list);
-            }
-            $appointments = $appointment_query->get();
-            $blade_data['appointments'] = $appointments;
+        // if (in_array($home_page_variant,['10','12','16']) ){
+        //     //appointment module for home page 10,12,16
+        //     $appointment_query = Appointment::query();
+        //     $appointment_query->with('lang_front');
+        //     $feature_product_list = get_static_option('home_page_' . get_static_option('home_page_variant') . '_appointment_section_category') ?? '';
+        //     $feature_product_list = unserialize($feature_product_list, ['class' => false]);
+        //     if (is_array($feature_product_list) && count($feature_product_list) > 0) {
+        //         $appointment_query->whereIn('categories_id', $feature_product_list);
+        //     }
+        //     $appointments = $appointment_query->get();
+        //     $blade_data['appointments'] = $appointments;
 
-        }
+        // }
         if (in_array($home_page_variant,['13','15','17','18'])){
             $all_events = Events::where(['lang' => $lang, 'status' => 'publish'])->orderBy('id', 'DESC')->take(get_static_option('home_page_01_event_area_items'))->get();
             $latest_products = Products::where(['lang' => $lang, 'status' => 'publish'])->orderBy('id', 'DESC')->take(get_static_option('home_page_products_area_items'))->get();
             $blade_data['all_events'] = $all_events;
             $blade_data['latest_products'] = $latest_products;
         }
-        if (in_array($home_page_variant,['15','18'])){
-            $product_query = Products::query();
-            $feature_product_list = get_static_option('home_page_15_' . $lang . '_featured_product_area_items') ??  serialize([]);
-            $feature_product_list = unserialize($feature_product_list, ['class' => false]);
-            if (count($feature_product_list) > 0) {
-                $product_query->whereIn('id', $feature_product_list);
-            }
-            $featured_products = $product_query->where('lang', $lang)->get();
+        // if (in_array($home_page_variant,['15','18'])){
+        //     $product_query = Products::query();
+        //     $feature_product_list = get_static_option('home_page_15_' . $lang . '_featured_product_area_items') ??  serialize([]);
+        //     $feature_product_list = unserialize($feature_product_list, ['class' => false]);
+        //     if (count($feature_product_list) > 0) {
+        //         $product_query->whereIn('id', $feature_product_list);
+        //     }
+        //     $featured_products = $product_query->where('lang', $lang)->get();
 
-            //best selling product
-            $top_selling_products = Products::where(['lang' => $lang, 'status' => 'publish'])->orderBy('sales', 'desc')->take(get_static_option('home_page_15_top_selling_product_area_items'))->get();
-            $blade_data['featured_products'] = $featured_products;
-            $blade_data['top_selling_products'] = $top_selling_products;
-        }
+        //     //best selling product
+        //     $top_selling_products = Products::where(['lang' => $lang, 'status' => 'publish'])->orderBy('sales', 'desc')->take(get_static_option('home_page_15_top_selling_product_area_items'))->get();
+        //     $blade_data['featured_products'] = $featured_products;
+        //     $blade_data['top_selling_products'] = $top_selling_products;
+        // }
 
 
         if (in_array($home_page_variant,['17'])){

@@ -52,6 +52,7 @@
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
+
 @if(!empty(get_static_option('disable_backend_preloader')))
 <div id="preloader">
     <div class="loader"></div>
@@ -60,27 +61,6 @@
 <div class="page-container">
     @include('backend/partials/sidebar')
     <div class="main-content">
-        <!-- header area start -->
-        <div class="header-area">
-            <div class="row align-items-center">
-                <!-- nav and search button -->
-                <div class="col-md-6 col-sm-8 clearfix">
-                    <div class="nav-btn pull-left">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <!-- profile info & task notification -->
-                <div class="col-md-6 col-sm-4 clearfix">
-                    <ul class="notification-area pull-right">
-                        <li id="full-view"><i class="ti-fullscreen"></i></li>
-                        <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
-                        <li><a class="btn btn-primary" target="_blank" href="{{url('/')}}">{{__('View Site')}}</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
         <div class="page-title-area">
             <div class="row align-items-center">
