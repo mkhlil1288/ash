@@ -110,7 +110,7 @@
     height: 100vh;
     width: 280px;
     overflow: hidden;
-    background: #303641;
+    background: #dee2e6;
     box-shadow: 2px 0 32px rgba(0, 0, 0, 0.05);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -157,7 +157,7 @@
 .metismenu li a {
     position: relative;
     display: block;
-    color: #8d97ad;
+    color: #303641;
     font-size: 15px;
     text-transform: capitalize;
     padding: 15px 15px;
@@ -166,7 +166,7 @@
 }
 
 .metismenu li a i {
-    color: #6a56a5;
+    color: #303641;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
@@ -177,7 +177,7 @@
     font-family: fontawesome;
     right: 15px;
     top: 12px;
-    color: #8d97ad;
+    color: #303641;
     font-size: 20px;
 }
 
@@ -195,7 +195,7 @@
 
 .metismenu li.active>a,
 .metismenu li:hover>a {
-    color: #fff;
+    color: #08c;
 }
 
 .metismenu li li a {
@@ -208,18 +208,18 @@
 
 .metismenu >li:hover>a,
 .metismenu >li.active>a {
-    color: #fff;
-    background: #343942;
+    color: #08c;
+    background: #fff;
 }
 
 .metismenu li:hover>a,
 .metismenu li.active>a {
-    color: #fff;
+    color: #08c;
 }
 
 .metismenu li:hover>a i,
 .metismenu li.active>a i {
-    color: #fff;
+    color: #08c;
 }
 
 .metismenu li li a:after {
@@ -717,9 +717,7 @@ ul.breadcrumbs {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
-    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);
-    padding: 17px 38px;
+    padding: 10px;
     position: relative;
 }
 
@@ -733,7 +731,7 @@ ul.breadcrumbs {
 .user-name {
     font-size: 17px;
     font-weight: 500;
-    color: #fff;
+    color: #08c;
     letter-spacing: 0;
     cursor: pointer;
     -webkit-user-select: none;
@@ -761,7 +759,7 @@ ul.breadcrumbs {
 
 .notification-area .dropdown-menu,
 .user-profile .dropdown-menu {
-    background: #fff;
+    background: #dee2e6;
     border: none;
     -webkit-transform: none!important;
             transform: none!important;
@@ -780,8 +778,8 @@ ul.breadcrumbs {
     top: 100%!important;
 }
 
-.notification-area .dropdown-menu.show,
-.user-profile .dropdown-menu.show {
+.notification-area .dropdown-menu.show
+.user-profile .dropdown-menu.show { 
     top: 100%!important;
     visibility: visible;
     opacity: 1;
@@ -790,7 +788,7 @@ ul.breadcrumbs {
 
 .user-profile .dropdown-menu a {
     font-size: 14px;
-    color: #8a8a8a;
+    color: #08c;
     letter-spacing: 0;
     font-weight: 500;
     padding: 4px 120px;

@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/stdafate/demo.tenchology.com/
+    - /bin/cp -r * $DEPLOYPATH
