@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/stdafate/demo.tenchology.com/
+    - export DEPLOYPATH=/home/traceyash/main.traceyash.com/
     - /bin/cp -r * $DEPLOYPATH
