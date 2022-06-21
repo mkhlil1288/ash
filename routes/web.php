@@ -15,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 //rss feed route
 Route::feeds();
 
+
+Route::get('/asd', function (){
+    dd(get_static_option('site_google_captcha_status'));
+
+});
+
 //courses module
 Route::group(['middleware' => ['setlang:frontend', 'globalVariable', 'maintains_mode']], function () {
 
@@ -1966,8 +1972,8 @@ Route::prefix('admin-home')->middleware(['setlang:backend'])->group(function () 
         /*----------------------------------------------------
             DATABASE UPGRADE
         ----------------------------------------------------*/
-        Route::get('/database-upgrade', 'GeneralSettingsController@database_upgrade')->name('admin.general.database.upgrade');
-        Route::post('/database-upgrade', 'GeneralSettingsController@database_upgrade_post');
+        // Route::get('/database-upgrade', 'GeneralSettingsController@database_upgrade')->name('admin.general.database.upgrade');
+        // Route::post('/database-upgrade', 'GeneralSettingsController@database_upgrade_post');
         /*----------------------------------------------------
               SITE IDENTITY
         ----------------------------------------------------*/

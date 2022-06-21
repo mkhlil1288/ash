@@ -717,6 +717,7 @@ ul.breadcrumbs {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+        
     padding: 10px;
     position: relative;
 }
@@ -778,7 +779,7 @@ ul.breadcrumbs {
     top: 100%!important;
 }
 
-.notification-area .dropdown-menu.show
+.notification-area .dropdown-menu.show,
 .user-profile .dropdown-menu.show { 
     top: 100%!important;
     visibility: visible;

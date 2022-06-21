@@ -1451,9 +1451,9 @@
                             <li class="{{active_menu('admin-home/general-settings/module-settings')}}"><a
                                     href="{{route('admin.general.module.settings')}}">{{__('Module Settings')}}</a>
                             </li>
-                            <li class="{{active_menu('admin-home/general-settings/database-upgrade')}}"><a
+                            {{-- <li class="{{active_menu('admin-home/general-settings/database-upgrade')}}"><a
                                         href="{{route('admin.general.database.upgrade')}}">{{__('Database Upgrade')}}</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </li>
                     @endif

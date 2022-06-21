@@ -845,15 +845,15 @@ class GeneralSettingsController extends Controller
     }
 
     //database upgrade
-    public function database_upgrade(){
-        return view('backend.general-settings.database-upgrade');
-    }
-    public function database_upgrade_post(Request $request){
-        setEnvValue(['APP_ENV' => 'local']);
-        Artisan::call('migrate', ['--force' => true ]);
-        Artisan::call('db:seed', ['--force' => true ]);
-        Artisan::call('cache:clear');
-        setEnvValue(['APP_ENV' => 'production']);
-        return back()->with(NexelitHelpers::database_upgrade());
-    }
+    // public function database_upgrade(){
+    //     return view('backend.general-settings.database-upgrade');
+    // }
+    // public function database_upgrade_post(Request $request){
+    //     setEnvValue(['APP_ENV' => 'local']);
+    //     Artisan::call('migrate', ['--force' => true ]);
+    //     Artisan::call('db:seed', ['--force' => true ]);
+    //     Artisan::call('cache:clear');
+    //     setEnvValue(['APP_ENV' => 'production']);
+    //     return back()->with(NexelitHelpers::database_upgrade());
+    // }
 }

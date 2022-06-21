@@ -408,6 +408,19 @@
             </div>
         </div>
     </section>
+    <div class="newsletter-form-wrap">
+        <div class="form-message-show"></div>
+        <form action="{{route('frontend.subscribe.newsletter')}}" method="post"
+              enctype="multipart/form-data">
+            @csrf
+            <div class="form-group">
+                <input type="email" name="email" placeholder="{{__('Enter your email')}}"
+                       class="form-control">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
 @endif
 
 @include('frontend.partials.contact-section')
